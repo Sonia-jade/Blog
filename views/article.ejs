@@ -1,0 +1,66 @@
+<%- include("partials/header"); -%>
+    <h2>A Writer only begins a book, areader finishes it.</h2>
+    <p> <%= articleContent %> </p>
+
+    <div class="card-container">
+        <div class="card-container-inner">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Travel Book</h3>
+                    <P>Early examples of travel literature include Pausanias' Description of Greece in the 2nd century CE, Safarnama (book of Travels) of Nasir Khusraw (1003-1077) the Journey Through Wales (1191) and Description of Wales (1194) by Gerald of Wales, and the travel journals of Ibn Jubayr (1145–1214) and Ibn Battuta (1304–1377), both of whom recorded their travels across the known world in detail.</p>
+                        <a href="/card-1">Read More</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <h3>Food Blog</h3>
+                    <P>If life has been kinda ho-hum or I’ve just dry for anything interesting to talk about, then it probably makes the most sense to get started by just writing about the recipe. Whiiich is kind of a “duh” moment because we are talking about food blogs. But even though it’s so simple, it can be surprisingly hard. It’s like I sit down, get the recipe in there, have the pictures in place.</p>       
+                         <a href="/card-2">Read More</a>
+                </div>
+            </div>
+             
+            <div class="card">
+                <div class="card-content">
+                    <h3>Writer's Digest</h3>
+                    <P>Writer's Digest was first published in December 1920 under the name Successful Writing. It changed name to Writer's Digest with the March 1921 issue. By the late 1920s, it shifted emphasis more from literary-quality writing to the rapidly growing pulp magazine field, which offered the widest opportunities to freelance writers. An important feature from 1933 forward was the New York </p>         
+                           <a href="card-3">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Self-Publishing</h3>
+                    <P>Self-publishing is not a new phenomenon. While most novels were distributed by established publishers, there have been authors who chose to self-publish, or even start their own presses, such as John Locke</p>
+                        <a href="Card-4">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Structuring Your Novel</h3>
+                    <P>Structuring Your Novel by KM Weiland explores the X-Factor behind satisfying novels: a solid story structure. It will show you how to successfully implement your story vision in a way readers find appealing, teach you how to avoid the dreaded saggy middle, and empower you to turn your structural weaknesses into reader-pleasing strengths.</p>
+                        <a href="card-5">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Lorem</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusantium delectus voluptatibus aliquam magni accusamus sit ea, maiores blanditiis recusandae? Labore reprehenderit eveniet, officia necessitatibus ut facilis! Nam, cumque deleniti.</P>
+                    <a href="card-6">Read More</a>
+                </div>
+            </div>
+    
+        </div>    
+        </div>
+
+<!--vanilla tilt-->
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400});
+        </script>
+
+<%- include("partials/footer"); -%>

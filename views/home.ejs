@@ -1,0 +1,104 @@
+<%- include("partials/header"); -%>
+  <br><br><h3 class="home-h3"> GROW THROUGH,WHAT YOU GO THROUGH </h3>
+    <p> <%= startingContent %> </p>
+
+<h2 class="home-h2">SOCIAL MEDIA</h2>
+<h2>WHAT IS SOCIAL MEDIA?🤔</h2><br>
+<p>We are meant to be social creatures. Every time we can’t expect our beloved ones around us, this application helps us to engage with them all the time. It is a web network which connects the people every nook and corner around the world. This web tool is fed by the user content such as text or comment, digital photos or videos; these are considered as the pulse of its structure. Some of the commonly known communication websites are Facebook, Twitter, Instagram and Pinterest.</p>
+
+<h1>STATS</h1>
+
+<div class="skills-bar">
+  <div class="bar">
+    <div class="info">
+      <span>INSTAGRAM</span>
+    </div>
+    <div class="progress-line instagram"><span></span></div>
+  </div>
+
+  <div class="bar">
+    <div class="info">
+      <span>WHATS APP</span>
+    </div>
+    <div class="progress-line whatsapp"><span></span></div>
+  </div>
+
+  <div class="bar">
+    <div class="info">
+      <span>YOUTUBE</span>
+    </div>
+    <div class="progress-line youtube"><span></span></div>
+  </div>
+
+  <div class="bar">
+    <div class="info">
+      <span>FACEBOOK </span>
+    </div>
+    <div class="progress-line facebook"><span></span></div>
+  </div>
+
+  <div class="bar">
+    <div class="info">
+      <span>TWITTER</span>
+    </div>
+    <div class="progress-line twitter"><span></span></div>
+  </div>
+
+  <div class="bar">
+    <div class="info">
+      <span>SNAPCHAT</span>
+    </div>
+    <div class="progress-line snapchat"><span></span></div>
+  </div>
+  
+</div>
+<br><br><p>The spectacular adoption of digital world has been increased drastically all round the world. Stats tells that social network platforms almost tripled their user base in the past years, from 970 million in 2010 to 3.18 billion users in 2020. This means one in three people in the world.</p>
+
+
+<h3>OUT LOOK OF POSITIVE ASPECTS👍</h3>
+<p>Interaction in social media will never give the satisfaction of face-to-face contact, even though it has its own benefits,
+<br>
+  <br>	It is an interactive technology via this platform, people can share their knowledge, ideas, career interests and other forms of information through virtual communities and networks.
+  <br>	Social media is helpful to learn and explore things we don’t even familiar with, and grant us visual treat through digital form of pictures or videos of it.
+  <br>	It covers large audience because most of the people use social media it will be a great opportunity for business persons to reach a large pool of people at a low cost.
+  <br>	You can create viral content; can raise awareness on important issues.
+  <br>	One can educate on their own.
+  <br>	Can give emotional support.
+  <br>	Connect anytime.
+  </p>
+  <h3>OUT LOOK OF NEGATIVE ASPECTS👎</h3>
+  <p>Interaction in social media will never give the satisfaction of face-to-face contact, even though it has its own benefits,
+    <br>
+      <br>	It is an interactive technology via this platform, people can share their knowledge, ideas, career interests and other forms of information through virtual communities and networks.
+      <br>	Social media is helpful to learn and explore things we don’t even familiar with, and grant us visual treat through digital form of pictures or videos of it.
+      <br>	It covers large audience because most of the people use social media it will be a great opportunity for business persons to reach a large pool of people at a low cost.
+      <br>	You can create viral content; can raise awareness on important issues.
+      <br>	One can educate on their own.
+      <br>	Can give emotional support.
+      <br>	Connect anytime.
+      </p>
+   <h3>LACK OF EMOTIONAL CONNECTION🥺</h3>
+   <p>Lately I had a misunderstanding with my friend because I didn’t get the tone of his voice distinctly through text messages this made us feel bad about each other. The quality of conversation is awful because we cannot sense the emotion or enthusiasm from the other person. It makes you wonder what they actually meant.</p>
+   <h3>LAZINESS😪</h3>
+   <p>This new aeon is in its progress of making super lazy society. People inside their own house used to notify through smart phones instead conveying the message in person. By choice we prefer calling a friend through network rather than running to them.</p>
+<h3>SHORTFALL OF FACE-TO-FACE COMMUNICATION👥</h3>
+<p>It led us to a society where a person shares his/her entire life journey to an unknown person met online. As more people have access to social media via their  mobile phones whenever they please, this worsens people to acquire smartphone. It has the tendency to make people communicate online rather in person because it  made the process simpler. A simple process may cover people to give that a go. So this had become habitual to many of us. Sometimes people can get over connected with blog or gaming console so that they lose connection with friends and family.</p>
+<h3>CYBERBULLYING🧐</h3>
+<p>People got harassed by means of digital platform especially social media. Harassing an individual by posting some toxic rumors about them, sexual remarks, pejorative labels, spreading once personal life without their knowledge and threats these are considered as harmful bullying behavior. Social media has spread this comfort sphere wider so that anyone can spread any kind of rumor about anything and anyone. This drives those affected individuals to emotional instability, mental illness, suicide and depression. Not all negative interchange shared online or on social media meant as cyberbullying, one which affects a person’s stable nature is considered as cyberbullying.</p><br>
+<img src="\images\pic-1.jpg" alt="" class="pic-1"><br><br>
+
+
+<%  posts.forEach(function(post){ %>
+
+  <h1><%=post.title%></h1>
+  <p>
+  <%=post.content + " ..."%>
+  <a href="/posts/<%=post._id%>">Read More</a>
+  </p>
+
+
+  <% }) %>
+
+
+
+<%- include("partials/footer"); -%>
